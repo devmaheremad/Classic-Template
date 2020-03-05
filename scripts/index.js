@@ -30,7 +30,7 @@ $(function() {
 
 
     // Make The Name In Overlay In center
-    $('.our-team .rightside div div .overlay p').css('padding-top', $('.our-team .rightside div div .overlay').height() / 2);
+    // $('.our-team .rightside div div .overlay p').css('padding-top', $('.our-team .rightside div div .overlay').height() / 2);
 
     // Make Fade In 
     $('.our-team .rightside div div').hover(function() {
@@ -85,4 +85,37 @@ $('.our-works .imgbox').hover(function() {
 
 }, function() {
     $(this).children('.overlay, .imgbox span').fadeOut();
+});
+
+$('.our-works .gallery .works').hover(function() {
+    $(this).children('.overlay').fadeIn();
+
+}, function() {
+    $(this).children('.overlay').fadeOut();
+});
+
+// Make Scrolled 
+$(document).ready(function() {
+
+    $('.navbar .navbar-nav li').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).data('val')).offset().top
+        }, 600);
+
+    });
+
+});
+
+// Add Nice Padding When Hover On Links
+
+$('.navbar .navbar-nav li').hover(function() {
+    $(this).animate({
+        paddingLeft: '5px'
+    }, 300)
+
+}, function() {
+    $(this).animate({
+        paddingLeft: 0
+    }, 300)
 });

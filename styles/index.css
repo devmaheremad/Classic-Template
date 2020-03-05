@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 8000px;
-}
-
 nav.bg-dark {
     background-color: rgba(0, 0, 0, 0.75) !important;
 }
@@ -140,6 +136,12 @@ nav.bg-dark {
     margin-right: 15px;
 }
 
+.our-team .rightside .font-weight-bolder p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .our-team .rightside img {
     width: 100%;
     height: 100%;
@@ -198,7 +200,7 @@ nav.bg-dark {
 /* Start Our Works */
 
 .our-works {
-    padding: 0 0 80px;
+    padding: 80px 0;
 }
 
 .our-works .mybuttons button {
@@ -224,51 +226,177 @@ nav.bg-dark {
     color: #fff;
 }
 
-#ContainerMixItUp .mix {
+.our-works .gallery .col-12,
+.our-works .gallery .col-md-4 {
+    padding: 0;
+}
+
+.our-works .gallery .works {
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+#mixUpIt .mix {
     display: none;
 }
 
-.our-works .imgbox {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.our-works .imgbox .overlay {
+.our-works .gallery .works .overlay {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #07a94ff5;
-    color: #fff;
+    background-color: rgba(7, 169, 79, 0.8);
     display: none;
+    color: #fff;
+}
+
+.our-works .gallery .works .overlay .info {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     font-weight: bold;
-    cursor: pointer;
 }
 
-.our-works .imgbox .overlay div {
+.our-works .gallery .works .overlay .data {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-works .gallery .works .overlay .data .hearts {
     position: absolute;
-    bottom: 40%;
-    left: 40%;
+    bottom: 5px;
+    right: 20px;
 }
 
-.our-works .imgbox span {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    color: #fff;
-    display: none;
-}
-
-.our-works .imgbox img {
+.our-works .gallery .works img {
     width: 100%;
 }
 
 
 /* End Our Works */
+
+
+/* Start Footer */
+
+footer {
+    padding: 80px 0 0;
+    background-color: #141414;
+    color: #6c757d;
+}
+
+footer .leftside,
+footer .middleside1,
+footer .middleside2,
+footer .rightsid {
+    margin-bottom: 50px;
+}
+
+footer h4 {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer .leftside ul li {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer .middleside1 ul li {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3px ease-in-out;
+    -moz-transition: all 0.3px ease-in-out;
+    -o-transition: all 0.3px ease-in-out;
+    transition: all 0.3px ease-in-out;
+}
+
+footer .middleside2 .media {
+    margin-bottom: 15px;
+}
+
+footer .rightside ul li {
+    padding-bottom: 10px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.3px ease-in-out;
+    -moz-transition: all 0.3px ease-in-out;
+    -o-transition: all 0.3px ease-in-out;
+    transition: all 0.3px ease-in-out;
+}
+
+footer ul li i {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+footer ul li i:hover {
+    color: #fff
+}
+
+footer ul li {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+footer ul li:hover {
+    color: #fff
+}
+
+footer .copyrights {
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .copyrights p {
+    padding: 0;
+    margin: 0;
+}
+
+footer .copyrights:hover {
+    color: #fff;
+}
+
+@media (max-width: 575.98px) {
+    .navbar-dark .navbar-nav .active>.nav-link,
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link.show,
+    .navbar-dark .navbar-nav .show>.nav-link,
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-link {
+        border: none;
+    }
+}
+
+
+/* End Footer */
 
 
 /* Start my FrameWork */

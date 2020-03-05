@@ -23,7 +23,7 @@
 
     <!-- Start Navbar -->
 
-    <nav class="navbar navbar-dark fixed-top navbar-expand-lg font-weight-bolder bg-dark">
+    <nav class="navbar navbar-dark fixed-top navbar-expand-lg font-weight-bolder bg-dark wow shake">
         <div class="container">
             <a class="navbar-brand" href="#">CLASSIC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,19 +32,19 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item active" data-val="#home">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-val="#about">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-val="#testi">
                         <a class="nav-link" href="#">Testimonials</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-val="#port">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item" data-val="#contact">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
@@ -56,7 +56,7 @@
 
     <!-- Start Slider -->
 
-    <section class="slider">
+    <section id="home" class="slider wow shake">
         <div class="overlay"></div>
         <div id="myslider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -104,9 +104,9 @@
 
     <section class="our-services">
         <div class="container">
-            <h3 class="h1section h3after">Our Services</h3>
+            <h3 class="h1section h3after wow rollIn" data-wow-offset="50">Our Services</h3>
             <div class="row">
-                <div class="service col-lg-4">
+                <div class="service col-lg-4 wow flipInX" data-wow-offset="80">
                     <div class="media">
                         <i class="fas fa-tablet-alt fa-fw"></i>
                         <div class="media-body">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service col-lg-4">
+                <div class="service col-lg-4 wow flipInY" data-wow-offset="80" data-wow-delay=".5s">
                     <div class="media">
                         <i class="fas fa-cloud fa-fw"></i>
                         <div class="media-body">
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service col-lg-4">
+                <div class="service col-lg-4 wow flipInX" data-wow-offset="80">
                     <div class="media">
                         <i class="fas fa-lightbulb fa-fw"></i>
                         <div class="media-body">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service col-lg-4">
+                <div class="service col-lg-4 wow flipInX" data-wow-offset="80">
                     <div class="media">
                         <i class="fas fa-envelope fa-fw"></i>
                         <div class="media-body">
@@ -142,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service col-lg-4">
+                <div class="service col-lg-4 wow flipInY" data-wow-offset="80" data-wow-delay=".5s">
                     <div class="media">
                         <i class="fas fa-video fa-fw"></i>
                         <div class="media-body">
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service col-lg-4">
+                <div class="service col-lg-4 wow flipInX" data-wow-offset="80">
                     <div class="media">
                         <i class="fas fa-heart fa-fw"></i>
                         <div class="media-body">
@@ -168,35 +168,35 @@
 
     <!-- Start Our Team -->
 
-    <section class="our-team">
+    <section id="about" class="our-team">
         <div class="container">
             <div class="row">
                 <div class="leftside col-12 col-md-4">
-                    <h3 class="h3after">Our Team</h3>
-                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae rem error, dicta corporis harum nulla temporibus dolorum culpa ipsa consequuntur.</p>
+                    <h3 class="h3after wow rollIn" data-wow-offset="50">Our Team</h3>
+                    <p class="text-muted wow rollIn" data-wow-offset="50" data-wow-delay="0.5s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae rem error, dicta corporis harum nulla temporibus dolorum culpa ipsa consequuntur.</p>
                 </div>
                 <div class="rightside col-12 col-md-8">
                     <div class="row">
-                        <div class="col">
-                            <div class="overlay font-weight-bolder text-center">
+                        <div class="col wow fadeIn" data-wow-offset="50">
+                            <div class="overlay font-weight-bolder">
                                 <p>Woodley</p>
                             </div>
                             <img src="images/ourteam1.jpg" alt="ourteam1">
                         </div>
-                        <div class="col">
-                            <div class="overlay font-weight-bolder text-center">
+                        <div class="col wow fadeIn" data-wow-offset="50" data-wow-delay="0.2s">
+                            <div class="overlay font-weight-bolder">
                                 <p>Tom Hardy</p>
                             </div>
                             <img src="images/ourteam2.jpg" alt="ourteam2">
                         </div>
-                        <div class="col">
-                            <div class="overlay font-weight-bolder text-center">
+                        <div class="col wow fadeIn" data-wow-offset="50" data-wow-delay="0.4s">
+                            <div class="overlay font-weight-bolder">
                                 <p>Tom Cruise</p>
                             </div>
                             <img src="images/ourteam3.jpg" alt="ourteam3">
                         </div>
-                        <div class="col">
-                            <div class="overlay font-weight-bolder text-center">
+                        <div class="col wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                            <div class="overlay font-weight-bolder">
                                 <p>Statham</p>
                             </div>
                             <img src="images/ourteam4.jpg" alt="ourteam4">
@@ -211,144 +211,220 @@
 
     <!-- Start What They Say -->
 
-    <section class="whay-say text-center">
+    <section id="testi" class="whay-say text-center">
         <div class="overlay"></div>
         <div class="container">
-            <h3 class="h1section h3aftercenter">What Our Clients Say</h3>
+            <h3 class="h1section h3aftercenter wow rollIn" data-wow-offset="50">What Our Clients Say</h3>
             <div class="opp active">
-                <q class="text-muted" style="color: rgb(228, 216, 216) !important;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis odit ipsam illo excepturi earum dolorem aspernatur veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
-                <span class="font-weight-bold">Ashley Cady</span>
+                <q class="text-muted wow rollIn" data-wow-offset="50" data-wow-delay="0.5s" style="color: rgb(228, 216, 216) !important;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis odit ipsam illo excepturi earum dolorem aspernatur veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
+                <span class="font-weight-bold wow rollIn" data-wow-offset="50" data-wow-delay="1s">Ashley Cady</span>
             </div>
             <div class="opp">
                 <q class="text-muted" style="color: rgb(228, 216, 216) !important;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim consectetur laudantium consequatur.</q>
-                <span class="font-weight-bold">Jhon Cady</span>
+                <span class="font-weight-bold wow rollIn" data-wow-offset="50" data-wow-delay="1s">Jhon Cady</span>
             </div>
             <div class="opp">
                 <q class="text-muted" style="color: rgb(228, 216, 216) !important;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, quaerat.</q>
-                <span class="font-weight-bold">Thomas Tem</span>
+                <span class="font-weight-bold wow rollIn" data-wow-offset="50" data-wow-delay="1s">Thomas Tem</span>
             </div>
             <div class="opp">
                 <q class="text-muted" style="color: rgb(228, 216, 216) !important;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit expedita quasi assumenda labore.</q>
-                <span class="font-weight-bold">Athem Nake</span>
+                <span class="font-weight-bold wow rollIn" data-wow-offset="50" data-wow-delay="1s">Athem Nake</span>
             </div>
         </div>
     </section>
 
     <!-- End What They Say -->
 
-    <section class="our-works">
-        <div class="container">
-
-        </div>
-    </section>
-
     <!-- Start Our Works -->
 
-    <section class="our-works">
+    <section id="port" class="our-works">
         <div class="container">
-            <h3 class="h1section h3after">Projects</h3>
+            <h3 class="h1section h3after wow rollIn" data-wow-offset="50">Projects</h3>
             <div class="mybuttons">
-                <button class="active">All</button>
-                <button>Art</button>
-                <button>Logo</button>
-                <button>Flowers</button>
+                <button class="active filter wow zoomInLeft" data-wow-offset="50" data-filter="all">All</button>
+                <button class="filter wow zoomInLeft" data-wow-offset="50" data-wow-delay="0.4s" data-filter=".art">Art</button>
+                <button class="filter wow zoomInLeft" data-wow-offset="50" data-wow-delay="0.8s" data-filter=".logo">Logo</button>
+                <button class="filter wow zoomInLeft" data-wow-offset="50" data-wow-delay="1.2s" data-filter=".flowers">Flowers</button>
             </div>
-            <div class="row">
-                <div class="col-12 col-sm-4">
-                    <div class="imgbox">
+            <div id="mixUpIt">
+                <div class="row gallery">
+                    <div class="col-6 col-md-4 works mix art">
                         <div class="overlay">
-                            <div>
-                                <p>View More</p>
+                            <div class="info">
+                                <div class="data">
+                                    <p>View More</p><br>
+                                    <div class="hearts">
+                                        <p>35 <i class="fas fa-heart"></i></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <span>
-                                <i class="fas fa-heart"></i> 15
-                            </span>
-                        <img src="images/art1.jpg" alt="art1">
+                        <div class="img-box">
+                            <img src="images/art1.jpg" alt="art1">
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="imgbox">
+                    <div class="col-6 col-md-4 works mix flowers">
                         <div class="overlay">
-                            <div>
-                                <p>View More</p>
+                            <div class="info">
+                                <div class="data">
+                                    <p>View More</p><br>
+                                    <div class="hearts">
+                                        <p>12 <i class="fas fa-heart"></i></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <span>
-                                <i class="fas fa-heart"></i> 47
-                            </span>
-                        <img src="images/logo1.jpg" alt="logo1">
+                        <div class="img-box">
+                            <img src="images/flowers1.jpg" alt="flowers1">
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="imgbox">
+                    <div class="col-6 col-md-4 works mix logo">
                         <div class="overlay">
-                            <div>
-                                <p>View More</p>
+                            <div class="info">
+                                <div class="data">
+                                    <p>View More</p><br>
+                                    <div class="hearts">
+                                        <p>32 <i class="fas fa-heart"></i></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <span>
-                                <i class="fas fa-heart"></i> 38
-                            </span>
-                        <img src="images/art2.jpg" alt="art2">
+                        <div class="img-box">
+                            <img src="images/logo1.jpg" alt="logo1">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-4">
-                    <div class="imgbox">
+                    <div class="col-6 col-md-4 works mix flowers">
                         <div class="overlay">
-                            <div>
-                                <p>View More</p>
+                            <div class="info">
+                                <div class="data">
+                                    <p>View More</p><br>
+                                    <div class="hearts">
+                                        <p>42 <i class="fas fa-heart"></i></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <span>
-                                <i class="fas fa-heart"></i> 48
-                            </span>
-                        <img src="images/flowers1.jpg" alt="flowers">
+                        <div class="img-box">
+                            <img src="images/flowers2.jpg" alt="flowers1">
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="imgbox">
+                    <div class="col-6 col-md-4 works mix art">
                         <div class="overlay">
-                            <div>
-                                <p>View More</p>
+                            <div class="info">
+                                <div class="data">
+                                    <p>View More</p><br>
+                                    <div class="hearts">
+                                        <p>65 <i class="fas fa-heart"></i></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <span>
-                                <i class="fas fa-heart"></i> 23
-                            </span>
-                        <img src="images/logo2.jpg" alt="logo2">
+                        <div class="img-box">
+                            <img src="images/art2.jpg" alt="art2">
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="imgbox">
+                    <div class="col-6 col-md-4 works mix logo">
                         <div class="overlay">
-                            <div>
-                                <p>View More</p>
+                            <div class="info">
+                                <div class="data">
+                                    <p>View More</p><br>
+                                    <div class="hearts">
+                                        <p>24 <i class="fas fa-heart"></i></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <span>
-                                <i class="fas fa-heart"></i> 16
-                            </span>
-                        <img src="images/flowers2.jpg" alt="flowers">
+                        <div class="img-box">
+                            <img src="images/logo2.jpg" alt="logo2">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- End Our Works -->
 
-    <script src="scripts/jquery-3.4.1.min.js"></script>
-    <script src="scripts/popper.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/wow.min.js"></script>
+    <!-- Start Footer -->
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="leftside col-sm-6 col-md-3">
+                    <h4>About Classic</h4>
+                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit impedit asperiores in ducimus inventore odit tempora perspiciatis error quo laboriosam.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fab fa-facebook-f fa-fw"></i></li>
+                        <li><i class="fab fa-google fa-fw"></i></i>
+                        </li>
+                        <li><i class="fab fa-twitter fa-fw"></i></li>
+                    </ul>
+                </div>
+                <div class="middleside1 col-sm-6 col-md-3">
+                    <h4>Tags</h4>
+                    <ul class="list-unstyled">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Photoshop</li>
+                        <li>Responsive</li>
+                        <li>Art</li>
+                    </ul>
+                </div>
+                <div class="middleside2 col-sm-6 col-md-3">
+                    <h4>Recent Posts</h4>
+                    <div class="media">
+                        <img src="images/post1.png" class="mr-3" alt="post1">
+                        <div class="media-body">
+                            <h5 class="mt-0">Best Laptops</h5>
+                            June, 2019
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img src="images/post2.png" class="mr-3" alt="post2">
+                        <div class="media-body">
+                            <h5 class="mt-0">Easy Make</h5>
+                            June, 2019
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img src="images/post3.png" class="mr-3" alt="post3">
+                        <div class="media-body">
+                            <h5 class="mt-0">Robots</h5>
+                            June, 2019
+                        </div>
+                    </div>
+                </div>
+                <div class="rightside col-sm-6 col-md-3 text-center text-sm-left">
+                    <h4>Blog Categories</h4>
+                    <ul class="list-unstyled">
+                        <li>Agency</li>
+                        <li>Business</li>
+                        <li>Multi Purpose</li>
+                        <li>Audio</li>
+                    </ul>
+                </div>
+            </div>
+            <section class="copyrights text-center text-sm-left">
+                <p>Copyrights 2020 Design By Maher Emad.</p>
+            </section>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <script src="scripts/jquery-3.4.1.min.js "></script>
+    <script src="scripts/popper.js "></script>
+    <script src="scripts/bootstrap.min.js "></script>
+    <script src="scripts/wow.min.js "></script>
+    <script src="scripts/jquery.mixitup.min.js "></script>
+    <script>
+        $('#mixUpIt').mixItUp();
+    </script>
     <script>
         new WOW().init();
     </script>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/index.js "></script>
 </body>
 
 </html>
